@@ -17,7 +17,7 @@ Please change the parent <Route path="${H}"> to <Route path="${H==="/"?"*":`${H}
       items-center\r
       p-4\r
       md:p-8\r
-      `,children:[j.jsxs("div",{className:"flex items-center gap-2 md:gap-4 group cursor-pointer",children:[j.jsx("img",{src:"https://images.icon-icons.com/2415/PNG/512/react_original_wordmark_logo_icon_146375.png",alt:"Logo",className:"w-8 h-8 md:w-12 md:h-12 transition-transform duration-300 group-hover:rotate-12"}),j.jsx("h1",{className:`\r
+      `,children:[j.jsxs("div",{className:"flex items-center gap-2 md:gap-4 group cursor-pointer",children:[j.jsx("img",{src:"/tienda-react/reactlogo.png",alt:"Logo",className:"w-8 h-8 md:w-12 md:h-12 transition-transform duration-300 group-hover:rotate-12"}),j.jsx("h1",{className:`\r
           text-lg\r
           md:text-5xl\r
           font-black\r
@@ -49,7 +49,7 @@ Please change the parent <Route path="${H}"> to <Route path="${H==="/"?"*":`${H}
             after:duration-300\r
             hover:after:scale-x-100\r
             hover:after:origin-bottom-left\r
-            `,children:"Home"}),j.jsxs(Ha,{to:"/cart",className:"relative group",children:[j.jsx("img",{src:"https://cdn-icons-png.flaticon.com/256/5465/5465865.png ",alt:"Carrito",className:"w-8 h-8 md:w-12 md:h-12 transition-transform group-hover:scale-110"}),c.length>0&&j.jsx("span",{className:`\r
+            `,children:"Home"}),j.jsxs(Ha,{to:"/cart",className:"relative group",children:[j.jsx("img",{src:"/tienda-react/carrito.png",alt:"Carrito",className:"w-8 h-8 md:w-12 md:h-12 transition-transform group-hover:scale-110"}),c.length>0&&j.jsx("span",{className:`\r
               absolute\r
               -top-1\r
               -right-1\r
