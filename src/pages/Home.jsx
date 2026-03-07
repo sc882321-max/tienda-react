@@ -28,9 +28,8 @@ const Home = () => {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold mb-6">Productos</h2>
-
       <SearchBar setSearch={setSearch} setPage={setPage} />
+      <h2 className="text-center text-3xl font-bold mb-8 bg-gradient-to-tr from-blue-500 to-purple-500 bg-clip-text text-transparent tracking-tight">Productos Disponibles</h2>
 
       <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {products.map((product) => (

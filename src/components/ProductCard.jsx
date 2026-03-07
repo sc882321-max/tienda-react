@@ -5,28 +5,29 @@ const ProductCard = ({ product }) => {
   const { addToCart } = useCart();
 
   return (
-    <div className="border rounded-lg p-4 shadow hover:shadow-xl transition">
+    <div className="flex flex-col bg-white border border-gray-200 rounded-xl p-2 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-200">
       <img
         src={product.thumbnail}
         alt={product.title}
-        className="h-40 w-full object-cover"
+        className="h-44 w-full object-contain bg-white-50 p-2 hover:scale-125 transition"
       />
 
-      <h2 className="font-bold mt-2">{product.title}</h2>
+      <h2 className="font-bold mt-3 text-gray-800 line-clamp-2 text-center">{product.title}</h2>
 
-      <p className="text-green-600 font-semibold">${product.price}</p>
+      <p className="text-gray-600 text-sm mt-1 line-clamp-3">{product.description}</p>
 
-      <div className="flex justify-between mt-3">
+      <p className="text-emerald-600 font-bold text-lg mt-1">${product.price}</p>
+      <div className="flex justify-between mt-auto">
         <Link
           to={`/product/${product.id}`}
-          className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-700"
+          className="font-mono flex-1 bg-indigo-500 text-white text-center  py-1 rounded hover:bg-indigo-600 transition hover:scale-105"
         >
           Ver detalle
         </Link>
 
         <button
           onClick={() => addToCart(product)}
-          className="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-700"
+          className="font-mono flex-1 bg-emerald-600 text-white py-1 rounded hover:bg-emerald-700 transition hover:scale-105"
         >
           Agregar
         </button>

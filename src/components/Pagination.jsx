@@ -6,19 +6,19 @@ const Pagination = ({ total, limit, page, setPage }) => {
       <button
         onClick={() => setPage(page - 1)}
         disabled={page === 1}
-        className="bg-gray-800 text-white px-4 py-2 rounded disabled:bg-gray-400"
+        className="font-mono bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded disabled:bg-indigo-400"
       >
         Anterior
       </button>
 
-      <span className="text-xl font-bold">
+      <span className="text-xl font-bold font-mono">
         Página {page} de {totalPages}
       </span>
 
       <button
         onClick={() => setPage(page + 1)}
         disabled={page === totalPages}
-        className="bg-gray-800 text-white px-4 py-2 rounded disabled:bg-gray-400"
+        className="font-mono bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded disabled:bg-indigo-400"
       >
         Siguiente
       </button>

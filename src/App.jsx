@@ -8,8 +8,11 @@ function App() {
   return (
     <>
       <Navbar />
+< HEAD
 
       <div className="container mx-auto p-4">
+
+      <div className="container mx-auto p-4 bg-slate-100 ">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product/:id" element={<ProductDetail />} />

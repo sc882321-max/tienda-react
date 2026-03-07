@@ -22,7 +22,7 @@ export const CartProvider = ({ children }) => {
     setCart((prev) => prev.filter((_, i) => i !== index));
   };
 
-  const total = cart.reduce((acc, item) => acc + item.price, 0);
+  const total = cart.reduce((acc, item) => acc + item.price, 0).toFixed(2);
 
   return (
     <CartContext.Provider value={{ cart, addToCart, removeFromCart, total }}>

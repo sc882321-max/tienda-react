@@ -1,16 +1,68 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛒 Tienda React - Proyecto Final Módulo IEste proyecto es una aplicación de comercio electrónico moderna desarrollada con React y Vite. La aplicación consume la API de DummyJSON para gestionar un catálogo de productos con funcionalidades avanzadas de búsqueda, paginación y un carrito de compras persistente.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+🚀 Requisitos ImplementadosSiguiendo las instrucciones del proyecto, se han integrado las siguientes características obligatorias:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  -Navegación Dinámica: Uso de react-router-dom para la gestión de rutas entre Home, Detalle de Producto y Carrito.
+
+  -Gestión de Estado Global: Implementación de Context API para manejar el carrito de compras, permitiendo agregar y eliminar productos desde cualquier componente.
+
+  -Persistencia de Datos: Los productos del carrito se guardan automáticamente en localStorage.
+
+  -Consumo de API Real: Integración con https://dummyjson.com/products utilizando endpoints para listado, búsqueda y detalles por ID.
+
+  -Interfaz Profesional: Diseño 100% responsivo y moderno utilizando Tailwind CSS v3, incluyendo efectos hover y estados interactivos.
+
+  
+  
+  
+  -Funcionalidades de Usuario:
+
+      -Búsqueda de productos en tiempo real.
+    
+      -Paginación real (usando parámetros limit y skip).
+    
+      -Contador dinámico de productos en el Navbar.
+
+
+
+      
+🛠️ Tecnologías Utilizadas
+
+    |React 18 (Vite) 
+    
+    |Tailwind CSS v3 
+    
+    |React Router Dom 
+    
+    |Context API 
+
+
+
+    
+📂 Estructura del Proyecto El código sigue la estructura sugerida para mantener la escalabilidad y orden:Plaintextsrc/
+
+├── components/     # Navbar, ProductCard, SearchBar, Pagination
+
+├── context/        # CartContext (Context API)
+
+├── pages/          # Home, ProductDetail, Cart
+
+├── services/       # Lógica de consumo de API (api.js)
+
+└── App.jsx         # Configuración de rutas y Providers
+
+
+
+
+🔧 Instalación
+
+  |Clona este repositorio.
+
+  |Instala las dependencias: Bashnpm install
+
+  |Inicia el proyecto en modo desarrollo: Bashnpm run dev

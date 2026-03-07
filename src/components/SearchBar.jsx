@@ -8,7 +8,7 @@ const SearchBar = ({ setSearch, setPage }) => {
     <input
       type="text"
       placeholder="Buscar producto..."
-      className="w-full p-2 border rounded mb-6"
+      className="font-mono w-full p-3 rounded-lg border border-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 mb-6"
       onChange={handleChange}
     />
   );
