@@ -20,11 +20,13 @@ const Navbar = () => {
 
         <div className="flex items-center gap-2 md:gap-4 group cursor-pointer">
 
-          <img
-            src="https://images.icon-icons.com/2415/PNG/512/react_original_wordmark_logo_icon_146375.png"
-            alt="Logo"
-            className="w-8 h-8 md:w-12 md:h-12 transition-transform duration-300 group-hover:rotate-12"
-          />
+          
+         <img
+  src={`${import.meta.env.BASE_URL}reactlogo.png`}
+  alt="Logo"
+  className="w-8 h-8 md:w-12 md:h-12 transition-transform duration-300 group-hover:rotate-12"
+/>
+          
 
           <h1 className="
           text-lg
@@ -76,10 +78,10 @@ const Navbar = () => {
           <Link to="/cart" className="relative group">
 
             <img
-              src="https://cdn-icons-png.flaticon.com/256/5465/5465865.png "
-              alt="Carrito"
-              className="w-8 h-8 md:w-12 md:h-12 transition-transform group-hover:scale-110"
-            />
+  src={`${import.meta.env.BASE_URL}carrito.png`}
+  alt="Carrito"
+  className="w-8 h-8 md:w-12 md:h-12 transition-transform group-hover:scale-110"
+/>
 
             {cart.length > 0 && (
               <span className="
