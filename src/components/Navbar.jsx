@@ -5,7 +5,7 @@ const Navbar = () => {
   const { cart } = useCart();
 
   return (
-    <nav className="bg-black text-white shadow-lg">
+    <nav className="text-white shadow-lg bg-slate-900">
 
       <div className="
       max-w-7xl
@@ -69,15 +69,14 @@ const Navbar = () => {
             after:duration-300
             hover:after:scale-x-100
             hover:after:origin-bottom-left
-            "
-          >
+            ">
             Home
           </Link>
 
           <Link to="/cart" className="relative group">
 
             <img
-              src="https://images.vexels.com/media/users/3/200060/isolated/preview/e39eb7217c7b5157d2c9154564d76598-icono-de-carrito-de-compras-rosa.png"
+              src="/carrito.png"
               alt="Carrito"
               className="w-8 h-8 md:w-12 md:h-12 transition-transform group-hover:scale-110"
             />
