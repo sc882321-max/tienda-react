@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="flex items-center gap-2 md:gap-4 group cursor-pointer">
 
           <img
-            src="/reactlogo.png"
+            src="https://images.icon-icons.com/2415/PNG/512/react_original_wordmark_logo_icon_146375.png"
             alt="Logo"
             className="w-8 h-8 md:w-12 md:h-12 transition-transform duration-300 group-hover:rotate-12"
           />
@@ -76,7 +76,7 @@ const Navbar = () => {
           <Link to="/cart" className="relative group">
 
             <img
-              src="/carrito.png"
+              src="https://cdn-icons-png.flaticon.com/256/5465/5465865.png "
               alt="Carrito"
               className="w-8 h-8 md:w-12 md:h-12 transition-transform group-hover:scale-110"
             />
