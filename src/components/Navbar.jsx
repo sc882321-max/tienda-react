@@ -18,7 +18,6 @@ const Navbar = () => {
       md:p-8
       ">
 
-        {/* Logo + titulo */}
         <div className="flex items-center gap-2 md:gap-4 group cursor-pointer">
 
           <img
@@ -46,11 +45,8 @@ const Navbar = () => {
           </h1>
 
         </div>
-
-        {/* espacio centro solo en desktop */}
         <div className="hidden md:flex justify-center"></div>
 
-        {/* Menu */}
         <div className="flex justify-end items-center gap-4 md:gap-8">
 
           <Link
